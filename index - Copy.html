@@ -65,19 +65,19 @@
 
 	<!-- activate fullpage.js -->
 	<script type="text/javascript">	
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				//options here
-				autoScrolling:true,
-				scrollHorizontally: true,
-				navigation: true,
-				navigationPosition: 'right',
-				sectionsColor: ['#000', 'whitesmoke', '#7BAABE', '#000']
-
-			});
-			//methods
-			$.fn.fullpage.setAllowScrolling(true);
+		
+		new fullpage('#fullpage', {
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true,
+		navigation: true,
+		navigationPosition: 'right',
+		sectionsColor: ['#000', 'whitesmoke', '#7BAABE', '#000']
 		});
+
+		//methods
+		fullpage_api.setAllowScrolling(true);
+	
 	</script>
 
 </body>
