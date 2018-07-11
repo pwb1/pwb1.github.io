@@ -15,20 +15,6 @@ h.home
    /* font-weight: bold; */
 }
 
-#barchart 
-{
-  width: 500px;
-  height: 500px;
-  padding-left: 200px;
-}
-
-#chart-header
-{
-	padding-right: 140px; 
-	font-size: 20px; 
-	font-weight: bold;
-}
-
 #body-header
 {
 	font-size: 35px; 
@@ -41,3 +27,25 @@ h.home
 	font-size: 16px; 
 	color:#1a1a1a;
 }
+
+#chart-header
+{
+  padding-right: 150px; 
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+#chart-container
+{
+  float: right; 
+  width: 70%; 
+  text-align: center;
+}
+
+#map
+{
+  width: 800px;
+  height: 800;
+  padding-left: 50px
+}
+

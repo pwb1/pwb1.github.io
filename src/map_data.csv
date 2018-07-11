@@ -1,6 +1,44 @@
-,State,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,fips
-0,Alabama,0.77,0.59,2.3,0.67,0.46,0.23,0.27,0.13,0.12,0.19,0.14,0.26,0.0,0.02,0.13,US01
-1,Alaska,0.0,0.0,0.14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,US02
-2,Arizona,1.51,2.14,0.21,1.16,1.11,0.39,0.51,0.06,1.1,0.78,0.8,0.44,0.34,0.89,0.83,US04
-3,Arkansas,0.11,0.39,9.15,0.15,0.13,0.01,0.04,1.39,0.42,0.0,0.0,0.0,0.05,0.0,0.05,US05
-4,California,7.14,19.14,32.61,12.46,6.87,5.86,5.95,6.52,6.99,7.88,7.51,5.06,5.95,7.92,7.08,US06
+,State,Fighters,fips
+0,Alabama,3,US01
+1,Arizona,40,US04
+2,Arkansas,1,US05
+3,California,183,US06
+4,Colorado,22,US08
+5,Connecticut,1,US09
+6,Florida,43,US12
+7,Georgia,13,US13
+8,Idaho,3,US16
+9,Illinois,39,US17
+10,Indiana,29,US18
+11,Iowa,33,US19
+12,Kansas,3,US20
+13,Kentucky,5,US21
+14,Louisiana,16,US22
+15,Maine,5,US23
+16,Maryland,3,US24
+17,Massachusetts,24,US25
+18,Michigan,7,US26
+19,Minnesota,21,US27
+20,Mississippi,3,US28
+21,Missouri,19,US29
+22,Nebraska,13,US31
+23,Nevada,23,US32
+24,New Hampshire,2,US33
+25,New Jersey,24,US34
+26,New Mexico,21,US35
+27,New York,42,US36
+28,North Carolina,9,US37
+29,North Dakota,4,US38
+30,Ohio,34,US39
+31,Oklahoma,13,US40
+32,Oregon,12,US41
+33,Pennsylvania,15,US42
+34,South Carolina,5,US45
+35,South Dakota,4,US46
+36,Tennessee,7,US47
+37,Texas,48,US48
+38,Utah,13,US49
+39,Vermont,1,US50
+40,Virginia,6,US51
+41,Washington,24,US53
+42,Wisconsin,15,US55
