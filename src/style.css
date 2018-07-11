@@ -1,0 +1,43 @@
+
+/* control navigation color (dots on right side of page) */
+#fp-nav ul li a span, .fp-slidesNav ul li a span 
+{
+    background: #F00;
+}
+
+h.home
+{
+   float: left;
+   width: 50%;
+   padding-left: 1em;
+   color: white;
+   font-size: 40px;
+   /* font-weight: bold; */
+}
+
+#barchart 
+{
+  width: 500px;
+  height: 500px;
+  padding-left: 200px;
+}
+
+#chart-header
+{
+	padding-right: 140px; 
+	font-size: 20px; 
+	font-weight: bold;
+}
+
+#body-header
+{
+	font-size: 35px; 
+	font-weight: bold; 
+	color:#1a1a1a;
+}
+
+#body-text
+{
+	font-size: 16px; 
+	color:#1a1a1a;
+}
