@@ -10,7 +10,7 @@
 	<!-- javascript libs -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
-	<script type="text/javascript" src="src/fullpage.js"></script>
+	<script type="text/javascript" src="/src/fullpage.js"></script>
 	
 	<!-- geomap libs https://d3-geomap.github.io/ -->
 
@@ -20,11 +20,48 @@
 
 	<div id="fullpage">
 		
-		<div class="section">Section1</div>
-		<div class="section">Section2</div>
-		<div class="section">Section3</div>
+		<!-- Page 1 -------------------------------------------------------------------------------->
+		<div class="section" style="background-image: url(main_img.jpg);">
+			<h class="home">Which Contiguous US State housed the most UFC fighters between 1993-2016 & what are some key characteristics of those fighters?</h>		
+		</div>
+
+
+		<!-- Page 2 -------------------------------------------------------------------------------->
+		<div class="section" style="width:100%; height:100%; padding-left:3%; padding-right:1%;">
+			
+			<div style="float: left; width: 30%;">
+				
+				<p id="body-header">Some header explaining the chart</p>
+				
+				<p id="body-text">
+					blah blah blah<br>
+					blah blah
+				</p>	
+			
+			</div>
+
+			<div style="float: right; width: 70%; text-align: center;">
+				
+				<div id="chart-header">Some chart header</div>
+				
+				<div id="barchart"></div>
+				
+			</div>
+
+		</div>
+		
+
+		<!-- Page 3 -------------------------------------------------------------------------------->
+		<div class="section">Section3
+		
+		</div>
+
 
 	</div> <!-- END pages -->
+
+	<!-- d3 charts -->
+	<!-- NOTE: these chart calls HAVE to come at end, if container div is not defined first (in above sections) then charts will not appear -->
+	<script type="text/javascript" src="/src/barchart.js"></script>
 
 	<!-- activate fullpage.js -->
 	<script type="text/javascript">	
@@ -40,7 +77,7 @@
 
 		//methods
 		fullpage_api.setAllowScrolling(true);
-
+	
 	</script>
 
 </body>
