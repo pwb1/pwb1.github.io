@@ -1,4 +1,5 @@
 
+
 var svg = d3.select("#mybarchart"),
     margin = {top: 20, right: 20, bottom: 30, left: 80},
     width = +svg.attr("width") - margin.left - margin.right,
@@ -12,7 +13,7 @@ var y = d3.scaleBand().range([height, 0]);
 var g = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
   
-d3.json("data.json", function(error, data) {
+d3.json("./data/barchart_data.json", function(error, data) {
     if (error) throw error;
   
     data.sort(function(a, b) { return a.value - b.value; });

@@ -1,0 +1,13 @@
+[
+{"area": "Lightweight ","value": 32},
+{"area": "Heavyweight ","value": 31},
+{"area": "Middleweight ","value": 26},
+{"area": "Light Heavyweight ","value": 24},
+{"area": "Bantamweight ","value": 21},
+{"area": "Welterweight ","value": 21},
+{"area": "Featherweight ","value": 14},
+{"area": "Flyweight ","value": 9},
+{"area": "Unknown ","value": 2},
+{"area": "Strawweight ","value": 2},
+{"area": "Super Heavyweight ","value": 2}
+]

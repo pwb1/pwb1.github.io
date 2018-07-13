@@ -4,21 +4,18 @@
 	<meta charset="utf-8">
 
 	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="./src/fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="./src/style.css" />
-
-	<!-- geomap libs https://d3-geomap.github.io/ -->
-	<!-- dont understand this but.. the d3.v4.min.js ref MUST come AFTER the below geomap ref or barchart.js does not appear -->
-	<link href="./src/d3-geomap/css/d3.geomap.css" rel="stylesheet">
-    <script src="./src/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
-    <script src="./src/d3-geomap/js/d3.geomap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./scripts/fullpage/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	
+	<link href="./scripts/d3-geomap/css/d3.geomap.css" rel="stylesheet">
+    <script src="./scripts/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
+    <script src="./scripts/d3-geomap/js/d3.geomap.min.js"></script>
 
 	<!-- javascript libs -->
+	<script type="text/javascript" src="./scripts/fullpage/fullpage.js"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./src/fullpage.js"></script>
 	
-
 </head>
 
 <body>
@@ -26,7 +23,7 @@
 	<div id="fullpage">
 		
 		<!-- Page 1 -------------------------------------------------------------------------------->
-		<div class="section" style="background-image: url(main_img.jpg);">
+		<div class="section" style="background-image: url(./images/main_img.jpg);">
 			<h class="home">Which Contiguous US State housed the most UFC fighters between 1993-2016 & what are some key characteristics of those fighters?</h>		
 		</div>
 
@@ -68,7 +65,7 @@
 			
 			</div>
 
-			<div>
+			<div id="chart-container">
 	
 				<svg id="mybarchart" width="700" height="500"></svg>
 				<div id="tooltip"></div>
@@ -77,14 +74,14 @@
 
 		</div>
 
-
 	</div> <!-- END pages -->
 
 	<!-- d3 charts -->
 	<!-- NOTE: these chart calls HAVE to come at end, if container div is not defined first (in above sections) then charts will not appear -->
-	<script type="text/javascript" src="./src/barchart.js"></script>
-	<script type="text/javascript" src="./src/map.js"></script>
-	<script src="barchart.js"></script>
+	<!-- NOTE2: barchart.js MUST be called first below, or display fails in Chrome -->
+	<script type="text/javascript" src="./scripts/map.js"></script>
+	<script type="text/javascript" src="./scripts/barchart.js"></script>
+	
 
 	<!-- activate fullpage.js -->
 	<script type="text/javascript">	
