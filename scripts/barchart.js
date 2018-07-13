@@ -1,7 +1,7 @@
 
 
 var svg = d3.select("#mybarchart"),
-    margin = {top: 20, right: 20, bottom: 30, left: 80},
+    margin = {top: 20, right: 20, bottom: 30, left: 115},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom;
   
@@ -24,7 +24,7 @@ d3.json("./data/barchart_data.json", function(error, data) {
     g.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return parseInt(d / 1000); }).tickSizeInner([-height]));
+        .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d; }).tickSizeInner([-height]));
 
     g.append("g")
         .attr("class", "y axis")
