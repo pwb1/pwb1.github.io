@@ -106,9 +106,11 @@
 
 	<!-- d3 charts -->
 	<!-- NOTE: these chart calls HAVE to come at end, if container div is not defined first (in above sections) then charts will not appear -->
+	<!-- NOTE: there is some conflict between treemap.js and barchart.js. If treemap.js is not called first below, then barchart.js x axis values disapear -->
 	<script type="text/javascript" src="./scripts/map.js"></script>
-	<script type="text/javascript" src="./scripts/barchart.js"></script>
 	<script type="text/javascript" src="./scripts/treemap.js"></script>
+	<script type="text/javascript" src="./scripts/barchart.js"></script>
+	
 
 	<!-- activate fullpage.js -->
 	<script type="text/javascript">	

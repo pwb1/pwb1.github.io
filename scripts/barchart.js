@@ -1,16 +1,16 @@
 
 
-var svg = d3.select("#mybarchart"),
+var svgbar = d3.select("#mybarchart"),
     margin = {top: 20, right: 20, bottom: 30, left: 115},
-    width = +svg.attr("width") - margin.left - margin.right,
-    height = +svg.attr("height") - margin.top - margin.bottom;
+    width = +svgbar.attr("width") - margin.left - margin.right,
+    height = +svgbar.attr("height") - margin.top - margin.bottom;
   
 var tooltip = d3.select("#tooltip").append("div").attr("class", "toolTip");
   
 var x = d3.scaleLinear().range([0, width]);
 var y = d3.scaleBand().range([height, 0]);
 
-var g = svg.append("g")
+var g = svgbar.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
   
 d3.json("./data/barchart_data.json", function(error, data) {
