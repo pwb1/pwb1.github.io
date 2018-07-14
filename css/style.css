@@ -45,7 +45,6 @@ h.home
 #map
 {
   width: 800px;
-  height: 800;
   padding-left: 50px
 }
 
@@ -78,5 +77,15 @@ h.home
 #mybarchart
 {
   /* margin-left: 10px; */
+}
+
+form 
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#mytreemap 
+{
+  font: 10px sans-serif;
 }
 

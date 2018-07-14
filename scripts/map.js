@@ -5,7 +5,7 @@ var map = d3.geomap.choropleth()
     .projection(d3.geo.albersUsa)
     .column('Fighters')
     .unitId('fips')
-    .scale(800)
+    .scale(900)
     .legend(true)
     .zoomFactor(2)
     .colors(colorbrewer.YlGnBu[9]);

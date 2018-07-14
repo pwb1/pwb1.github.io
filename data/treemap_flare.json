@@ -1,0 +1,257 @@
+{
+  "name": "flare",
+  "children": [
+    {
+      "name": "Decision",
+      "children": [
+        {
+          "name": "Majority",
+          "size": 2
+        },
+        {
+          "name": "Split",
+          "size": 32
+        },
+        {
+          "name": "Unanimous",
+          "size": 121
+        }
+      ]
+    },
+    {
+      "name": "KO",
+      "children": [
+        {
+          "name": "Flying Knee",
+          "size": 1
+        },
+        {
+          "name": "Head Kick",
+          "size": 2
+        },
+        {
+          "name": "Head Kick and Knee",
+          "size": 1
+        },
+        {
+          "name": "Head Kick and Punches",
+          "size": 3
+        },
+        {
+          "name": "Kick to the Body",
+          "size": 1
+        },
+        {
+          "name": "Knee",
+          "size": 1
+        },
+        {
+          "name": "Punch",
+          "size": 18
+        },
+        {
+          "name": "Punch to the Body",
+          "size": 2
+        },
+        {
+          "name": "Punches",
+          "size": 25
+        },
+        {
+          "name": "Slam",
+          "size": 2
+        },
+        {
+          "name": "Unknown",
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "Submission",
+      "children": [
+        {
+          "name": "Achilles Lock",
+          "size": 1
+        },
+        {
+          "name": "Arm Triangle Choke",
+          "size": 1
+        },
+        {
+          "name": "Armbar",
+          "size": 9
+        },
+        {
+          "name": "Armlock",
+          "size": 1
+        },
+        {
+          "name": "Arm-Triangle Choke",
+          "size": 1
+        },
+        {
+          "name": "Brabo Choke",
+          "size": 2
+        },
+        {
+          "name": "Bulldog Choke",
+          "size": 1
+        },
+        {
+          "name": "Crucifix Choke",
+          "size": 1
+        },
+        {
+          "name": "Elbows",
+          "size": 1
+        },
+        {
+          "name": "Forearm Choke",
+          "size": 1
+        },
+        {
+          "name": "Guillotine Choke",
+          "size": 24
+        },
+        {
+          "name": "Heel Hook",
+          "size": 3
+        },
+        {
+          "name": "Inverted Triangle Kimura",
+          "size": 1
+        },
+        {
+          "name": "Keylock",
+          "size": 1
+        },
+        {
+          "name": "Kimura",
+          "size": 3
+        },
+        {
+          "name": "Kneebar",
+          "size": 3
+        },
+        {
+          "name": "Neck Crank",
+          "size": 3
+        },
+        {
+          "name": "Punches",
+          "size": 7
+        },
+        {
+          "name": "Rear-Naked Choke",
+          "size": 27
+        },
+        {
+          "name": "Shoulder Choke",
+          "size": 1
+        },
+        {
+          "name": "Shoulder Injury",
+          "size": 1
+        },
+        {
+          "name": "Straight Armbar",
+          "size": 1
+        },
+        {
+          "name": "Strikes",
+          "size": 1
+        },
+        {
+          "name": "Triangle Choke",
+          "size": 7
+        }
+      ]
+    },
+    {
+      "name": "TKO",
+      "children": [
+        {
+          "name": "Corner Stoppage",
+          "size": 4
+        },
+        {
+          "name": "Cut",
+          "size": 1
+        },
+        {
+          "name": "Doctor Stoppage",
+          "size": 1
+        },
+        {
+          "name": "Doctor Stoppage - Broken Nose",
+          "size": 1
+        },
+        {
+          "name": "Elbows",
+          "size": 1
+        },
+        {
+          "name": "Head Kick and Punches",
+          "size": 2
+        },
+        {
+          "name": "Jaw Injury",
+          "size": 1
+        },
+        {
+          "name": "Kick to the Body",
+          "size": 1
+        },
+        {
+          "name": "Knee to the Body",
+          "size": 1
+        },
+        {
+          "name": "Knee to the Body and Punches",
+          "size": 2
+        },
+        {
+          "name": "Knees",
+          "size": 1
+        },
+        {
+          "name": "Leg Injury",
+          "size": 1
+        },
+        {
+          "name": "Leg Kicks",
+          "size": 1
+        },
+        {
+          "name": "Punch",
+          "size": 1
+        },
+        {
+          "name": "Punches",
+          "size": 62
+        },
+        {
+          "name": "Punches and Elbows",
+          "size": 3
+        },
+        {
+          "name": "Retirement",
+          "size": 1
+        },
+        {
+          "name": "Slam and Punch",
+          "size": 1
+        },
+        {
+          "name": "Spinning Back Fist",
+          "size": 1
+        },
+        {
+          "name": "Strikes",
+          "size": 2
+        }
+      ]
+    }
+  ]
+}
