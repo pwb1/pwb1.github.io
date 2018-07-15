@@ -33,18 +33,24 @@
 			
 			<div style="float: left; width: 30%;">
 				
-				<p id="body-header">Some header explaining the chart</p>
-				
+				<p id="body-header">Which Contiguous US State housed the most UFC fighters between 1993-2016?</p>
+
+				<p id="body-sub-header">What does this visualization tell us?</p>
 				<p id="body-text">
-					blah blah blah<br>
-					blah blah
-				</p>	
+					This choropleth map shows us the number of active fighters from each state. The darker the color, the more active fighters in that specific state.
+					Highlight a state to see the exact number of fighters. Additionally, you can double-click to zoom in on a region. 
+					<br><br>
+					We can clearly see one state stands above the rest when it comes to pure volume, and that state is <b>California</b>.
+				</p>
+
+				<p id="body-sub-header">Whats next?</p>
+				<p id="body-text">Now that we know CA has had the most active fighters, lets dig a bit deeper and check some characteristics of those fighers.</p>	
 			
 			</div>
 
 			<div id="chart-container">
 
-				<div id="map">Chart Header</div>
+				<div id="map"><b>UFC Fighters Active Per State | 1993-2016</b></div>
 							
 			</div>
 
@@ -54,20 +60,28 @@
 		<!-- Page 3 -------------------------------------------------------------------------------->
 		<div class="section" style="width:100%; height:100%; padding-left:3%; padding-right:1%;">
 			
-			<div style="float: left; width: 30%;">
+			<div style="float: left; width: 50%;">
 				
-				<p id="body-header">Some header explaining the chart</p>
+				<p id="body-header">CA Fighters by Weight Class</p>
 				
+				
+				<p><img style="float:left;padding-right:15px;" src="./images/nate-diaz-weigh-in.jpg" alt="diaz weigh-in"></img></p>
+				<p id="body-sub-header">Lightweights are popular!</p>
 				<p id="body-text">
-					blah blah blah<br>
-					blah blah
-				</p>	
+					This chart gives us a breakdown of the weight classes our CA fighters (active 1993-2016) fought in. 
+					The chart lists these classes in decending order from top to bottom. Lightweights are the most active, with strawweights
+					and super heavyweights the least acive. Highlight a bar in the chart to see exact number for that weight class.
+					<br><br>
+					There are a few notes to point out based with respect to this chart. For one, Super heavyweight is no longer a valid weight class in the UFC.
+					Additionally, there are several 'unknown' weight classes in our chart. These fights definitely went down! our dataset just didnt cover which weight they fought under.
+					<br><br>
+				</p>
 			
 			</div>
 
-			<div id="chart-container">
-	
-				<svg id="mybarchart" width="800" height="500"></svg>
+			<div id="chart-container2">
+				<p><b>CA Fighters by Weight Class | 1993-2016</b></p>
+				<svg id="mybarchart" width="600" height="400"></svg>
 				<div id="tooltip"></div>
 							
 			</div>
