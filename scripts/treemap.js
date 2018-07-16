@@ -56,7 +56,7 @@ d3.json("./data/treemap_flare.json", function(error, data) {
       .on("change", changed);
 
   var timeout = d3.timeout(function() {
-    d3.select("input[value=\"sumByCount\"]")
+    d3.select("input[value=\"sumBySize\"]")
         .property("checked", true)
         .dispatch("change");
   }, 2000);

@@ -43,7 +43,7 @@
 					We can clearly see one state stands above the rest when it comes to pure volume, and that state is <b>California</b>.
 				</p>
 
-				<p id="body-sub-header">Whats next?</p>
+				<p id="body-sub-header">What next?</p>
 				<p id="body-text">Now that we know CA has had the most active fighters, lets dig a bit deeper and check some characteristics of those fighers.</p>	
 			
 			</div>
@@ -62,17 +62,17 @@
 			
 			<div style="float: left; width: 50%;">
 				
-				<p id="body-header">CA Fighters by Weight Class</p>
+				<p id="body-header">CA fighters by weight class</p>
 				
 				
 				<p><img style="float:left;padding-right:15px;" src="./images/nate-diaz-weigh-in.jpg" alt="diaz weigh-in"></img></p>
 				<p id="body-sub-header">Lightweights are popular!</p>
 				<p id="body-text">
 					This chart gives us a breakdown of the weight classes our CA fighters (active 1993-2016) fought in. 
-					The chart lists these classes in decending order from top to bottom. Lightweights are the most active, with strawweights
+					The chart lists these classes in decending order from top to bottom. We can see that lightweights and heavyweights are the most active, with strawweights
 					and super heavyweights the least acive. Highlight a bar in the chart to see exact number for that weight class.
 					<br><br>
-					There are a few notes to point out based with respect to this chart. For one, Super heavyweight is no longer a valid weight class in the UFC.
+					There are a few notes to point out with respect to this chart. For one, Super heavyweight is no longer a valid weight class in the UFC.
 					Additionally, there are several 'unknown' weight classes in our chart. These fights definitely went down! our dataset just didnt cover which weight they fought under.
 					<br><br>
 				</p>
@@ -80,6 +80,7 @@
 			</div>
 
 			<div id="chart-container2">
+
 				<p><b>CA Fighters by Weight Class | 1993-2016</b></p>
 				<svg id="mybarchart" width="600" height="400"></svg>
 				<div id="tooltip"></div>
@@ -89,27 +90,80 @@
 		</div>
 
 
-	<!-- Page 3 -------------------------------------------------------------------------------->
+	<!-- Page 4 -------------------------------------------------------------------------------->
 		<div class="section" style="width:100%; height:100%; padding-left:3%; padding-right:1%;">
 			
 			<div style="float: left; width: 30%;">
 				
-				<p id="body-header">Some header explaining the chart</p>
+				<p id="body-header">A breakdown of methods used by CA fighters to win their fights</p>
 				
+				<p id="body-sub-header">What is this visualization showing me?</p>
 				<p id="body-text">
-					blah blah blah<br>
-					blah blah
+				This treemap is broken into 4 primary colors - each representing either KO, TKO, Submission, or Decision win.
+				Within each of these 4 categories there are subtypes. For example, a submission can be by armbar, triangle choke, etc.
+				This treemap gives us a great cue, visually, to see the most often/effective methods used by the CA based fighters.<br><br>
+				The radio buttons at bottom can be used to resize the treemap by either <b>size</b> or <b>count</b>.
 				</p>	
 			
 			</div>
 
 			<div id="chart-container">
-	
+
+				<p><b>CA Fighters by Method of Winning | 1993-2016</b></p>
 				<svg id="mytreemap" width="800" height="500"></svg>
 				<form>
-				  <label><input type="radio" name="mode" value="sumBySize" checked> Size</label>
+				  <label><input type="radio" name="mode" value="sumBySize"> Size</label>
 				  <label><input type="radio" name="mode" value="sumByCount"> Count</label>
 				</form>
+							
+			</div>
+
+		</div>
+
+
+		<!-- Page 5 -------------------------------------------------------------------------------->
+		<div class="section" style="width:100%; height:100%; padding-left:3%; padding-right:1%;">
+			
+			<div style="float: left; width: 50%;">
+				
+				<p id="body-header">About this presentation</p>
+				
+				<p id="body-sub-header">Whats the jist of it?</p>
+				<p id="body-text">
+				This project was done to complete requirements for CS498 Data Visualization at the University of Illinois. The primary purpose was
+				to work with the d3 javascript library to create various interactive data visualizations while building out a story based narrative.
+				</p>
+
+				<p id="body-sub-header">Who am I?</p>
+				<p id="body-text">
+				My name is Phil Bailey and I choose to do a short overview of UFC stats - primarily because im a huge MMA fan and thought
+				this would be a fun topic for the project. Im definitely not a creative designer (and also partially color blind) so hopefully you didnt
+				find this to terribly ugly. Personally (though im biased in this case), I thought the final product turned out pretty good, and if
+				you're still reading this, hopefully you enjoyed it and learned something too!
+				</p>
+
+				<p id="body-sub-header">Where did the UFC data come from?</p>
+				<p id="body-text">
+				The data used for this presentation was found on reddit:
+				<a href="https://www.reddit.com/r/datasets/comments/47a7wh/ufc_fights_and_fighter_data/" target="_blank">UFC Fighter Data</a><br>
+				R was used for various pre-processing/aggregation of the data, with the final processed files used to fed into the d3 visualizations. 
+				</p>	
+			
+			</div>
+
+			<div style="float: right; width: 45%;padding-left: 5%">
+
+				<p id="body-header" style="padding-left: 25px;">References</p>
+				<p id="body-text">
+				<ul>
+					<li><a href="https://www.reddit.com/r/datasets/comments/47a7wh/ufc_fights_and_fighter_data/" target="_blank">UFC Fighter Data</a></li>
+					<li><a href="https://alvarotrigo.com/fullPage/" target="_blank">fullpage.js</a><br></li>
+					<li><a href="https://bl.ocks.org/mbostock/4063582" target="_blank">treemap</a><br></li>
+					<li><a href="http://embed.plnkr.co/QCl1ZV/" target="_blank">csv to flare converter</a><br></li>
+					<li><a href="https://d3-geomap.github.io/" target="_blank">geomaps</a><br></li>
+					<li><a href="https://bl.ocks.org/alandunning/7008d0332cc28a826b37b3cf6e7bd998" target="_blank">horizontal bar chart</a><br></li>			
+				</ul>
+				</p>
 							
 			</div>
 
@@ -135,7 +189,9 @@
 		scrollHorizontally: true,
 		navigation: true,
 		navigationPosition: 'right',
-		sectionsColor: ['#000', 'whitesmoke', '#7BAABE', 'whitesmoke']
+		navigationTooltips: ['Home', 'Fighters per State', 'CA Weight Classes', 'CA Methods of Winning', 'About this Presentation'],
+		sectionsColor: ['#000', 'whitesmoke', '#7BAABE', 'whitesmoke'],
+		easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
 		});
 
 		//methods
