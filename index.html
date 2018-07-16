@@ -5,6 +5,7 @@
 
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="./scripts/fullpage/fullpage.css" />
+	<link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	
 	<link href="./scripts/d3-geomap/css/d3.geomap.css" rel="stylesheet">
@@ -24,7 +25,9 @@
 		
 		<!-- Page 1 -------------------------------------------------------------------------------->
 		<div class="section" style="background-image: url(./images/main_img.jpg);">
-			<h class="home">Which Contiguous US State housed the most UFC fighters between 1993-2016 & what are some key characteristics of those fighters?</h>		
+			<h class="home">Which Contiguous US State housed the most UFC fighters between 1993-2016 & what are some key characteristics of those fighters?</h>
+			<br><br>
+			<h class="home-sub-head">- scroll down to begin the presentation -</h>		
 		</div>
 
 
@@ -44,13 +47,13 @@
 				</p>
 
 				<p id="body-sub-header">What next?</p>
-				<p id="body-text">Now that we know CA has had the most active fighters, lets dig a bit deeper and check some characteristics of those fighers.</p>	
+				<p id="body-text">Now that we know CA has had the most active fighters, lets dig a bit deeper and check some characteristics of those fighters.</p>	
 			
 			</div>
 
 			<div id="chart-container">
 
-				<div id="map"><b>UFC Fighters Active Per State | 1993-2016</b></div>
+				<div id="map"><b>UFC Fighters Active per State | 1993-2016</b></div>
 							
 			</div>
 
@@ -66,14 +69,14 @@
 				
 				
 				<p><img style="float:left;padding-right:15px;" src="./images/nate-diaz-weigh-in.jpg" alt="diaz weigh-in"></img></p>
-				<p id="body-sub-header">Lightweights are popular!</p>
+				<p id="body-sub-header">The lightweight division is stacked!</p>
 				<p id="body-text">
 					This chart gives us a breakdown of the weight classes our CA fighters (active 1993-2016) fought in. 
-					The chart lists these classes in decending order from top to bottom. We can see that lightweights and heavyweights are the most active, with strawweights
-					and super heavyweights the least acive. Highlight a bar in the chart to see exact number for that weight class.
+					The chart lists these classes in descending order from top to bottom. We can see that lightweights and heavyweights are the most active, with strawweights
+					and super heavyweights the least active. Highlight a bar in the chart to see exact number for that weight class.
 					<br><br>
 					There are a few notes to point out with respect to this chart. For one, Super heavyweight is no longer a valid weight class in the UFC.
-					Additionally, there are several 'unknown' weight classes in our chart. These fights definitely went down! our dataset just didnt cover which weight they fought under.
+					Additionally, there are several unknown weight classes in our chart. These fights definitely went down! Our dataset just didn't cover which weight they fought under.
 					<br><br>
 				</p>
 			
@@ -95,14 +98,15 @@
 			
 			<div style="float: left; width: 30%;">
 				
-				<p id="body-header">A breakdown of methods used by CA fighters to win their fights</p>
+				<p id="body-header">A breakdown of methods used by CA fighters to win fights</p>
 				
 				<p id="body-sub-header">What is this visualization showing me?</p>
 				<p id="body-text">
-				This treemap is broken into 4 primary colors - each representing either KO, TKO, Submission, or Decision win.
+				This treemap is broken into 4 primary colors - each representing a KO, TKO, Submission, or Decision win.
 				Within each of these 4 categories there are subtypes. For example, a submission can be by armbar, triangle choke, etc.
-				This treemap gives us a great cue, visually, to see the most often/effective methods used by the CA based fighters.<br><br>
-				The radio buttons at bottom can be used to resize the treemap by either <b>size</b> or <b>count</b>.
+				This treemap gives us a great way, visually, to see the most often used/effective methods used by CA based fighters.<br><br>
+				The radio buttons at bottom can be used to resize the treemap by either <b>size</b> or <b>count</b>. Size allots area to the main
+				4 categories based on volume, while count allots area based on number of subtypes per category.
 				</p>	
 			
 			</div>
@@ -128,7 +132,7 @@
 				
 				<p id="body-header">About this presentation</p>
 				
-				<p id="body-sub-header">Whats the jist of it?</p>
+				<p id="body-sub-header">Why did I create it?</p>
 				<p id="body-text">
 				This project was done to complete requirements for CS498 Data Visualization at the University of Illinois. The primary purpose was
 				to work with the d3 javascript library to create various interactive data visualizations while building out a story based narrative.
@@ -136,17 +140,17 @@
 
 				<p id="body-sub-header">Who am I?</p>
 				<p id="body-text">
-				My name is Phil Bailey and I choose to do a short overview of UFC stats - primarily because im a huge MMA fan and thought
-				this would be a fun topic for the project. Im definitely not a creative designer (and also partially color blind) so hopefully you didnt
-				find this to terribly ugly. Personally (though im biased in this case), I thought the final product turned out pretty good, and if
-				you're still reading this, hopefully you enjoyed it and learned something too!
+				My name is Phil Bailey and I choose to do a short overview of UFC stats - primarily because I'm a huge MMA fan and thought
+				this would be a fun topic for the project. I'm definitely not a creative designer - and partially color blind - so hopefully you didn't
+				find my <i>creative</i> choices to terribly ugly. Personally (though im biased), I thought the final product turned out well, and if
+				you're still reading this I hope you enjoyed it and learned something too!
 				</p>
 
 				<p id="body-sub-header">Where did the UFC data come from?</p>
 				<p id="body-text">
 				The data used for this presentation was found on reddit:
 				<a href="https://www.reddit.com/r/datasets/comments/47a7wh/ufc_fights_and_fighter_data/" target="_blank">UFC Fighter Data</a><br>
-				R was used for various pre-processing/aggregation of the data, with the final processed files used to fed into the d3 visualizations. 
+				R was used for various pre-processing/aggregation of the data, with the final processed files fed into the d3 visualizations. 
 				</p>	
 			
 			</div>
@@ -190,7 +194,7 @@
 		navigation: true,
 		navigationPosition: 'right',
 		navigationTooltips: ['Home', 'Fighters per State', 'CA Weight Classes', 'CA Methods of Winning', 'About this Presentation'],
-		sectionsColor: ['#000', 'whitesmoke', '#7BAABE', 'whitesmoke'],
+		sectionsColor: ['#000', 'whitesmoke', '#deebf7', 'whitesmoke', '#deebf7'],
 		easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
 		});
 

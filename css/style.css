@@ -11,28 +11,43 @@ h.home
    width: 50%;
    padding-left: 1em;
    color: white;
-   font-size: 40px;
-   /* font-weight: bold; */
+   font-family: 'Work Sans';
+   font-size: 30px;
+   font-weight: 900;
+}
+
+h.home-sub-head
+{
+   float: left;
+   width: 50%;
+   padding-left: 1em;
+   color: white;
+   font-family: 'Work Sans';
+   font-size: 20px;
+   font-weight: 900;
 }
 
 #body-header
 {
-	font-size: 35px; 
+	font-size: 30px; 
 	font-weight: bold; 
 	color:#1a1a1a;
+  font-family: 'Work Sans';
 }
 
 #body-sub-header
 {
   font-size: 17px;
   font-weight: bold; 
-  color:#1a1a1a;  
+  color:#1a1a1a;
+  font-family: 'Work Sans';  
 }
 
 #body-text
 {
 	font-size: 15px; 
 	color:#1a1a1a;
+  font-family: 'Work Sans';
 }
 
 #chart-header
