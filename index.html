@@ -130,7 +130,7 @@
 			
 			<div style="float: left; width: 50%;">
 				
-				<p id="body-header">About this presentation</p>
+				<p id="body-header">About the presentation</p>
 				
 				<p id="body-sub-header">Why did I create it?</p>
 				<p id="body-text">
@@ -173,6 +173,68 @@
 
 		</div>
 
+
+		<!-- Page 6 -------------------------------------------------------------------------------->
+		<div class="section" style="width:100%; height:100%; padding-left:3%; padding-right:1%;">
+			
+			<div style="float: left; width: 50%;">
+				
+				<p id="body-header">About the visualization</p>	
+				<p id="body-sub-header">Hybrid Structure</p>
+				<p id="body-text">
+					The hybrid structure followed in this presentation is the <b>Interactive Slideshow</b>. It provides an author guided path
+					through each slide/scene.
+				</p>
+
+				<p id="body-sub-header">Scenes</p>
+				<p id="body-text">
+					This Interactive Slide show provides 3 scenes:
+					<ul id="body-text">
+						<li>Choropleth map showing count of fighters per state</li>
+						<li>Horizontal bar chart showing count of CA fighters per weight class</li>
+						<li>Treemap giving a breakdown of the different methods of winning for CA based fighters</li>
+					</ul>
+				</p>
+
+				<p id="body-sub-header">Annotations</p>
+				<p id="body-text">
+					Annotation of charts is done consistently within the text of each page. Within each page overview, there is a breakdown
+					of the scene (aka visualization) explaining key areas to look for and explaining how to interact with the chart. Tooltips
+					are available in all charts within the slideshow - providing detail by simply highlighting an area of interest. Legends are used
+					to give end-users numeric perspective when more detail is needed.
+				</p>
+
+			</div>
+
+			<div style="float: right; width: 45%; padding-left: 5%; padding-top: 77px;">
+
+				<p id="body-sub-header">Parameters</p>
+				<p id="body-text">
+					There are multiple parameters used within this slideshow's visualizations. Parameters include:
+					<ul id="body-text">
+						<li>Count of fighters per state</li>
+						<li>Count of fighters per weight class</li>
+						<li>Count of detailed win method within each win category (i.e. KO, TKO, Submission, Decision)</li>
+					</ul>
+				</p>
+
+				<p id="body-sub-header">Triggers</p>
+				<p id="body-text">
+					Triggers are used to both change between scenes and give interactivity within the charts themselves. For transitioning between
+					slides/scenes this presentation uses a simple scroll based method. The user can scroll their mouse wheel to move forward/backward
+					from page to page.<br>
+					With respect to chart interactivity, several methods are available:
+					<ul id="body-text">
+						<li>Tooltips are available on all charts by highlighting any specific area of interest</li>
+						<li>The choropleth map allows zooming into specific regions</li>
+						<li>The treemap allows transitioning between size and count parameters for area allocation</li>
+					</ul>
+				</p>
+							
+			</div>	
+
+		</div>
+
 	</div> <!-- END pages -->
 
 
@@ -193,8 +255,8 @@
 		scrollHorizontally: true,
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['Home', 'Fighters per State', 'CA Weight Classes', 'CA Methods of Winning', 'About this Presentation'],
-		sectionsColor: ['#000', 'whitesmoke', '#deebf7', 'whitesmoke', '#deebf7'],
+		navigationTooltips: ['Home', 'Fighters per State', 'CA Weight Classes', 'CA Methods of Winning', 'About the visualization', 'About this Presentation'],
+		sectionsColor: ['#000', 'whitesmoke', '#deebf7', 'whitesmoke', '#deebf7', '#FFCF9E'],
 		easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
 		});
 
