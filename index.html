@@ -10,7 +10,7 @@
 	
 	<link href="./scripts/d3-geomap/css/d3.geomap.css" rel="stylesheet">
     <script src="./scripts/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
-    <script src="./scripts/d3-geomap/js/d3.geomap.min.js"></script>
+    <script src="./scripts/d3-geomap/js/d3.geomap.js"></script>
 
 	<!-- javascript libs -->
 	<script type="text/javascript" src="./scripts/fullpage/fullpage.js"></script>
@@ -243,8 +243,7 @@
 					With respect to chart interactivity, several methods are available:
 					<ul id="body-text">
 						<li>Tooltips are available on all charts by highlighting any specific area of interest</li>
-						<li>The choropleth map allows zooming into specific regions</li>
-						<li>The treemap allows transitioning between size and count parameters for area allocation</li>
+						<li>The treemap allows transitioning between size and count parameters to alter area allocation</li>
 					</ul>
 				</p>
 							
@@ -272,7 +271,7 @@
 		scrollHorizontally: true,
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['Home', 'Fighters per State', 'CA Weight Classes', 'CA Methods of Winning', 'About the visualization', 'About this Presentation'],
+		//navigationTooltips: ['Home', 'Fighters per State', 'CA Weight Classes', 'CA Methods of Winning', 'About the visualization', 'About this Presentation'],
 		sectionsColor: ['#000', 'whitesmoke', '#deebf7', 'whitesmoke', '#deebf7', '#FFCF9E'],
 		easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
 		});

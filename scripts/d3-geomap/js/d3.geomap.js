@@ -370,7 +370,7 @@ var Geomap = (function () {
                 return _ === _this._.centered;
             });
 
-            this.svg.selectAll('g.zoom').transition().duration(750).attr('transform', 'translate(' + x0 + ', ' + y0 + ')scale(' + k + ')translate(-' + x + ', -' + y + ')');
+            //this.svg.selectAll('g.zoom').transition().duration(750).attr('transform', 'translate(' + x0 + ', ' + y0 + ')scale(' + k + ')translate(-' + x + ', -' + y + ')');
         }
 
         /**
@@ -448,7 +448,7 @@ var Choropleth = (function (_Geomap) {
             column: null,
             domain: null,
             duration: null,
-            format: d3.format(',.02f'),
+            format: d3.format(',.0f'),
             legend: false,
             valueScale: d3.scale.quantize
         };
