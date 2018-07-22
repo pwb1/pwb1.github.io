@@ -5,15 +5,28 @@
     background: #F00;
 }
 
+
+div.home
+{
+  background-image: url(../images/main_img.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
 h.home
 {
    float: left;
    width: 50%;
    padding-left: 1em;
+   padding-top: 3em;
    color: white;
    font-family: 'Work Sans';
    font-size: 30px;
    font-weight: 900;
+   
 }
 
 h.home-sub-head
