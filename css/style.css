@@ -68,6 +68,7 @@ h.home-sub-head
   padding-right: 150px; 
   font-size: 20px; 
   font-weight: bold;
+  position: relative;
 }
 
 #chart-container
@@ -86,7 +87,8 @@ h.home-sub-head
 #map
 {
   width: 800px;
-  padding-left: 75px
+  padding-left: 75px;
+  position: relative;
 }
 
 .bar 

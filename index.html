@@ -54,9 +54,22 @@
 			</div>
 
 			<div id="chart-container">
-
-				<div id="map"><b>UFC Fighters Active per State | 1993-2016</b></div>
-							
+				<div id="map"><b>UFC Fighters Active per State | 1993-2016</b>
+					<div style="position: absolute;">
+						<svg width="120" height="500">
+								  						
+	  						<text x="6" y="74" font-family="Work Sans">
+	  							CA - 183 fighters!
+	  						</text>
+	  						
+	  						<rect x="1" y="50" width="115" height="40" rx="10" ry="10"
+	  							style="fill:darkblue;stroke:black;stroke-width:1;fill-opacity:0.2;stroke-opacity:0.9;" />
+	  						
+	  						<line x1="160" y1="240" x2="55" y2="90" 
+	  							style="stroke:black;stroke-width:2;stroke-opacity:0.5;" />
+						</svg>
+					</div>
+				</div>		
 			</div>
 
 		</div>
@@ -200,7 +213,9 @@
 
 				<p id="body-sub-header">Annotations</p>
 				<p id="body-text">
-					Annotation of charts is done consistently within the text of each page. Within each page overview, there is a breakdown
+					The first visualization - choropleth map - gives a great example of how annotations can be useful. In addition to tooltips giving
+					volume of fighters per state, we use an annotation to highlight the single state having the most fighters.
+					Annotation of charts is done consistently within the text of each page as well. Within each page overview, there is a breakdown
 					of the scene (aka visualization) explaining key areas to look for and explaining how to interact with the chart. Tooltips
 					are available in all charts within the slideshow - providing detail by simply highlighting an area of interest. Legends are used
 					to give end-users numeric perspective when more detail is needed.
