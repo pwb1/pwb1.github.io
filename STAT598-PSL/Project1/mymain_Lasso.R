@@ -150,9 +150,10 @@ test.x = model.matrix(~.-1, data=test.x) #~.-1 to drop intercept created by mode
 # Build Model
 #------------------------------------------------------
 #standardize (center/scale features)
-#add padding (tiny number) to account for 'Inf' if all vals equivelant (e.g. 0/1)
-train.x = scale(train.x + round(runif(nrow(train.x), min = 0, max = .01),3))
-test.x = scale(test.x + round(runif(nrow(test.x), min = 0, max = .01),3))
+train.x = scale(train.x)
+train.x[is.nan(train.x)] = 0
+test.x = scale(test.x)
+test.x[is.nan(test.x)] = 0
 
 #get Lasso coefficients
 m_coef = mylasso(train.x, train.y, lam=exp(2))
@@ -166,7 +167,7 @@ test.x = cbind(intercept=1, test.x)
 p = exp(test.x %*% m_coef)
 
 #output to file
-output = data.frame(PID = c(test[,1]), Sale_Price = c(p)) #we refer test vs test.x here to get PID w/out padding
+output = data.frame(PID = c(test[,1]), Sale_Price = c(p)) #we get PID from test vs test.x because it is un-scaled
 output$Sale_Price = round(output$Sale_Price, 1) #round to 1 decimal
 write.csv(output, "mysubmission3.txt", row.names = FALSE, quote = FALSE)
 
